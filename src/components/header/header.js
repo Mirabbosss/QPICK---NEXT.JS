@@ -43,19 +43,21 @@ const Header = () => {
       }
     };
 
-    window.addEventListener("storage", handleStorageChange);
+    if (typeof window !== "undefined") {
+      window.addEventListener("storage", handleStorageChange);
+    }
 
     return () => {
-      window.removeEventListener("storage", handleStorageChange);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("storage", handleStorageChange);
+      }
     };
   }, []);
-
 
   return (
     <header className={styles.header}>
       <Container maxW="1440px">
         <Flex minWidth="max-content" alignItems="center">
-
           {/* Menu */}
           <Flex p="2" gap='6' alignItems='center'>
             {/* Logo */}
@@ -92,7 +94,7 @@ const Header = () => {
             <Link href="/basket" legacyBehavior>
               <div className={styles.wrappericon}>
                 <span className={styles.counter}>{basketCount}</span>
-                <BasketIcon style={{ fill: '#838383' }}/>
+                <BasketIcon style={{ fill: '#838383' }} />
               </div>
             </Link>
           </Flex>
