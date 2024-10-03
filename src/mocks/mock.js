@@ -3,7 +3,7 @@ import NaushnikiByz from "@images/naushniki-byz.png";
 import NaushnikiEarpods1 from "@images/naushniki-earpods-1.png";
 import NaushnikiEarpods2 from "@images/naushniki-earpods-2.png";
 import BesprovodnieAirpods from "@images/besprovodnie-airpods.png";
-import BesprovodnieGerlah from "@images/besprovodnie-Gerlah.png";
+import BesprovodnieGerlah from "@images/besprovodnie-gerlah.png";
 import BesprovodnieBorofone from "@images/besprovodnie-borofone.png";
 
 export const phones = [
