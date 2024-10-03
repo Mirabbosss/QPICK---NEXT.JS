@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #eaeaea;
+
+  .linkLogo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0f0f0f;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  .wrappericon {
+    min-height: 60px;
+    min-width: 62px;
+    padding: 15px;
+    position: relative;
+    display: grid;
+    place-content: center;
+    user-select: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  .counter {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: #ffa542;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color: #fff;
+  }
+}
