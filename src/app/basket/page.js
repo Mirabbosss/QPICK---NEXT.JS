@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "./basket.module.scss";
 import EmptyBasket from "@components/empty-basket/emptyBasket";
 import Map from "@components/map/map";
@@ -249,7 +250,7 @@ const Basket = () => {
                 </Accordion>
 
                 <Spacer />
-                <Text fontSize={"lg"}>{curerPrice}</Text>
+                <Text fontSize={"lg"}>{curerPrice} ₸</Text>
               </Flex>
             </Box>
           </>

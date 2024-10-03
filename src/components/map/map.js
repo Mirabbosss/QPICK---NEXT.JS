@@ -5,13 +5,13 @@ import L from "leaflet";
 
 const Map = () => {
   useEffect(() => {
-    const map = L.map("map").setView([41.31115, 69.27959], 13); // O'zbekistonning Toshkent joylashuvi
+    const map = L.map("map").setView([41.31115, 69.27959], 13);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
     }).addTo(map);
 
-    L.marker([41.31115, 69.27959]).addTo(map) // Marker qo'shish
+    L.marker([41.31115, 69.27959]).addTo(map)
       .bindPopup("Toshkent, O'zbekiston")
       .openPopup();
 
