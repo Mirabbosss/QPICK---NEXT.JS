@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+body {
+  background-color: #eaeaea !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* Har doim scrollbar joyida turishi uchun */
+html {
+    overflow-y: scroll; /* Scrollbar har doim bo'lishi uchun */
+  }
+  
+  /* Scrollbar uchun asosiy dizayn */
+  ::-webkit-scrollbar {
+    width: 8px; /* Scrollbar eni */
+    background-color: transparent; /* Dastlab ko'rinmas */
+  }
+  
+  /* Hoverda yoki scroll paytida paydo bo'lish */
+  ::-webkit-scrollbar-thumb {
+    background-color: grey; /* Scroll qilganda ko'rinadigan rang */
+    border-radius: 10px;
+    opacity: 0; /* Dastlab ko'rinmaydi */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 1; /* Hoverda ko'rinadi */
+  }
+  
+  
+  *::-moz-scrollbar-thumb {
+    background-color: grey;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  *::-moz-scrollbar-thumb:hover {
+    opacity: 1;
+  }
+
+  .embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  
